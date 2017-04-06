@@ -41,5 +41,8 @@ if len(labs_to_rebuild) > 0:
             base_dir, lab, lab)
         subprocess.call(build_cmd, shell=True)
 
+    print 'Calling ls'
     subprocess.call('ls')
+
+    print 'Calling ls build'
     subprocess.call(['ls', 'build'])
