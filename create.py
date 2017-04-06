@@ -35,7 +35,7 @@ if len(labs_to_rebuild) > 0:
 
     for lab in labs_to_rebuild:
         print 'Rebuilding', lab
-        build_cmd = 'pdflatex -output-directory build {}/{}.tex'.format(lab, lab)
+        build_cmd = 'cd {} && pdflatex -output-directory build {}.tex'.format(lab, lab)
         subprocess.call(build_cmd.split())
 
     subprocess.call('ls')
