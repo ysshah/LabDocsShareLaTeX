@@ -30,7 +30,7 @@ else:
 if len(labs_to_rebuild) > 0:
 
     # Install LaTeX
-    subprocess.call(install_cmd.split())
+    subprocess.call(install_cmd, shell=True)
 
     # Make a 'build' directory
     subprocess.call(['mkdir', 'build'])
