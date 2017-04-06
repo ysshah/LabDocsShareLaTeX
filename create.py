@@ -5,10 +5,10 @@ LABS = ['AFM', 'ATM', 'CO2', 'MNO', 'MOT', 'NMR', 'OPT', 'QIE', 'BMC', 'OTZ',
     'COM', 'MUO', 'GMA', 'BRA', 'RUT', 'HAL', 'LLS', 'NLD', 'JOS', 'SHE']
 
 # Command to install LaTeX
-install_cmd = ('sudo apt-get update && sudo apt-get install '
-    '--no-install-recommends texlive-fonts-recommended '
-    'texlive-latex-extra texlive-fonts-extra texlive-latex-recommended '
-    'dvipng')
+# install_cmd = ('sudo apt-get update && sudo apt-get install '
+#     '--no-install-recommends texlive-fonts-recommended '
+#     'texlive-latex-extra texlive-fonts-extra texlive-latex-recommended '
+#     'dvipng')
 
 # Retrieve changed files in the latest git push
 diff_cmd = 'git diff --name-only ' + os.environ['TRAVIS_COMMIT_RANGE']
@@ -28,15 +28,16 @@ else:
         if lab in LABS:
             labs_to_rebuild.add(lab)
 
+labs_to_rebuild = ['OPT']
 if len(labs_to_rebuild) > 0:
 
     # Make a 'build' directory
     subprocess.call(['mkdir', 'build'])
 
-    for lab in labs_to_rebuild:
-        print 'Rebuilding', lab
-        build_cmd = 'cd {} && pdflatex -output-directory build {}.tex'.format(lab, lab)
-        subprocess.call(build_cmd.split())
+    # for lab in labs_to_rebuild:
+    #     print 'Rebuilding', lab
+    #     build_cmd = 'cd {} && pdflatex -output-directory build {}.tex'.format(lab, lab)
+    #     subprocess.call(build_cmd.split())
 
     subprocess.call('ls')
     subprocess.call(['ls', 'build'])
