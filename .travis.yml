@@ -1,5 +1,2 @@
-python:
-  - "3.6"
-
 script:
-- python create.py
+- bash test.sh
