@@ -34,10 +34,12 @@ if len(labs_to_rebuild) > 0:
     # Make a 'build' directory
     subprocess.call(['mkdir', 'build'])
 
-    # for lab in labs_to_rebuild:
-    #     print 'Rebuilding', lab
-    #     build_cmd = 'cd {} && pdflatex -output-directory build {}.tex'.format(lab, lab)
-    #     subprocess.call(build_cmd.split())
+    base_dir = os.environ['TRAVIS_BUILD_DIR'] + '/'
+    for lab in labs_to_rebuild:
+        print 'Rebuilding', lab
+        subprocess.call(['cd', base_dir + lab])
+        build_cmd = 'pdflatex -output-directory ../build {}.tex'.format(lab, lab)
+        subprocess.call(build_cmd.split())
 
     subprocess.call('ls')
     subprocess.call(['ls', 'build'])
