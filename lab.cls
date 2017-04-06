@@ -3,8 +3,8 @@
 \LoadClass{article}
 \RequirePackage[margin=1in]{geometry}  % Set page margins
 \RequirePackage{graphicx}
-\RequirePackage{subcaption}            % Subfigure labels
 \RequirePackage{caption}               % Go to top of image when Fig. is clicked
+\RequirePackage{subcaption}            % Subfigure labels
 \RequirePackage{color}                 % Color text
 \RequirePackage[nottoc]{tocbibind}     % Add references to TOC
 \RequirePackage{hyperref}              % Hyperlinks

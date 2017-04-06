@@ -18,7 +18,8 @@ changed_files = subprocess.check_output(
 
 if 'lab.cls' in changed_files:
     # If lab.cls is changed, rebuild all PDFs
-    labs_to_rebuild = LABS
+    # labs_to_rebuild = LABS
+    labs_to_rebuild = ['OPT']
 else:
     # Otherwise, only rebuild PDFs that have changed files
     labs_to_rebuild = set()
@@ -33,7 +34,7 @@ if len(labs_to_rebuild) > 0:
     subprocess.call(['mkdir', 'build'])
 
     for lab in labs_to_rebuild:
-        print('Rebuilding', lab)
+        print 'Rebuilding', lab
         build_cmd = 'pdflatex -output-directory build {}/{}.tex'.format(lab, lab)
         subprocess.call(build_cmd.split())
 
