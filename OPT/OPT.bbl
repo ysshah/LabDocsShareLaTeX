@@ -1,0 +1,73 @@
+\begin{thebibliography}{11}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[dia()]{diagrams}
+\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/OPT/01-diagrams.pdf}{Diagrams
+  of the electronics}.
+
+\bibitem[exp()]{experiment7}
+\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/OPT/06-Experiment_7.pdf}{Experiment
+  7} report on optical pumping.
+
+\bibitem[rub()]{rubidium_diagrams}
+\href{http://experimentationlab.berkeley.edu/sites/default/files/images/OPT_RbEnergyLevels.pdf}{Reference
+  Rubidium Diagrams}.
+
+\bibitem[Bloom(1960)]{bloom}
+Arnold~L. Bloom.
+\newblock Optical pumping.
+\newblock \emph{Scientific American}, 203\penalty0 (4):\penalty0 72--80, 1960.
+\newblock \doi{10.1038/scientificamerican1060-72}.
+
+\bibitem[Camparo(2007)]{camparo}
+James Camparo.
+\newblock The rubidium atomic clock and basic research.
+\newblock \emph{Physics Today}, 60\penalty0 (11):\penalty0 33--39, 2007.
+\newblock \doi{10.1063/1.2812121}.
+
+\bibitem[Carver(1963)]{carver}
+Thomas~R. Carver.
+\newblock Optical pumping.
+\newblock \emph{Science}, 141\penalty0 (3581):\penalty0 599--608, 1963.
+\newblock \doi{10.1126/science.141.3581.599}.
+
+\bibitem[Corney(1977)]{corney}
+Alan Corney.
+\newblock The hanle effect and the theory of resonance fluorescence
+  experiments.
+\newblock \emph{Atomic and Laser Spectroscopy}, pages 473--533, 1977.
+\newblock \doi{10.1093/acprof:oso/9780199211456.003.0015}.
+
+\bibitem[{De Zafra}(1960)]{zafra}
+Robert~L. {De Zafra}.
+\newblock Optical pumping.
+\newblock \emph{American Journal of Physics}, 28\penalty0 (7):\penalty0 646,
+  1960.
+\newblock \doi{10.1119/1.1935926}.
+
+\bibitem[Lyons(1991)]{lyons}
+Louis Lyons.
+\newblock
+  \emph{\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/Data\%20Analysis\%20Book\%20PDF/Error\%20Analysis\%20Book-Louis\%20Lyons.pdf}{A
+  Practical Guide to Data Analysis for Physical Science Students}}.
+\newblock Cambridge University Press, 1991.
+\newblock ISBN 0-521-41415-6.
+
+\bibitem[Ramsey(1953)]{ramsey}
+Norman Ramsey.
+\newblock \emph{Nuclear moments}.
+\newblock Wiley, 1953.
+
+\bibitem[Taylor(1997)]{taylor}
+John~R. Taylor.
+\newblock
+  \emph{\href{http://physics111.lib.berkeley.edu/Physics111/Reprints/Data\%20Analysis\%20Book\%20PDF/Introduction_To_Error_Analysis_Taylor_John.pdf}{An
+  Introduction to Error Analysis}}.
+\newblock University Science Books, second edition, 1997.
+\newblock ISBN 0-935702-42-3.
+
+\end{thebibliography}
