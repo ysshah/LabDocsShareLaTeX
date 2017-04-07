@@ -14,6 +14,7 @@ before_install:
 script:
 - pdflatex --version
 - latexmk --version
+- latexmk -help
 # - python create.py
 notifications:
   email: false
