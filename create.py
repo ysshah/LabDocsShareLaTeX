@@ -33,7 +33,7 @@ if len(labs_to_rebuild) > 0:
 
     for lab in labs_to_rebuild:
         print 'Rebuilding', lab
-        build_cmd = 'cd {}/{} && latexmk -outdir=../build -pdf {}.tex'
+        build_cmd = 'cd {}/{} && latexmk -outdir=../build -pdf {}'
         subprocess.call(build_cmd.format(base_dir, lab, lab), shell=True)
 
         # Sync the PDF to Physics lab website
