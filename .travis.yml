@@ -4,10 +4,7 @@ addons:
   ssh_known_hosts: appserver.live.0bc915fe-2126-4798-9621-fdf6aa78ed57.drush.in:2222
 before_install:
 - sudo add-apt-repository -y ppa:jonathonf/texlive
-- sudo apt update
-- sudo apt install -f
-- sudo apt install texlive
-# texlive-base texlive-binaries texlive-latex-base texlive-latex-recommended texlive-fonts-recommended
+- sudo apt update && sudo apt install texlive texlive-base texlive-binaries texlive-latex-base texlive-latex-recommended texlive-fonts-recommended
 # - sudo apt-get update && sudo apt-get install --no-install-recommends
 #   texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra
 #   texlive-latex-recommended dvipng latexmk
