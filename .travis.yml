@@ -1,9 +1,9 @@
 addons:
   ssh_known_hosts: appserver.live.0bc915fe-2126-4798-9621-fdf6aa78ed57.drush.in:2222
 before_install:
-- sudo apt-get update && sudo apt-get install --no-install-recommends
-  texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra
-  texlive-latex-recommended dvipng latexmk
+# - sudo apt-get update && sudo apt-get install --no-install-recommends
+#   texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra
+#   texlive-latex-recommended dvipng
 - openssl aes-256-cbc -K $encrypted_aa59d102cfec_key -iv $encrypted_aa59d102cfec_iv
   -in deploy_rsa.enc -out /tmp/deploy_rsa -d
 - eval "$(ssh-agent -s)"
