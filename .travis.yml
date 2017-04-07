@@ -6,15 +6,12 @@ before_install:
 - sudo apt-get update && sudo apt-get install --no-install-recommends
   texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra
   texlive-latex-recommended dvipng latexmk
-# - openssl aes-256-cbc -K $encrypted_aa59d102cfec_key -iv $encrypted_aa59d102cfec_iv
-#   -in deploy_rsa.enc -out /tmp/deploy_rsa -d
-# - eval "$(ssh-agent -s)"
-# - chmod 600 /tmp/deploy_rsa
-# - ssh-add /tmp/deploy_rsa
+- openssl aes-256-cbc -K $encrypted_aa59d102cfec_key
+  -iv $encrypted_aa59d102cfec_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
+- eval "$(ssh-agent -s)"
+- chmod 600 /tmp/deploy_rsa
+- ssh-add /tmp/deploy_rsa
 script:
-- pdflatex --version
-- latexmk --version
-- latexmk -help
-# - python create.py
+- python create.py
 notifications:
   email: false
