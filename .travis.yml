@@ -3,7 +3,7 @@ sudo: required
 addons:
   ssh_known_hosts: appserver.live.0bc915fe-2126-4798-9621-fdf6aa78ed57.drush.in:2222
 before_install:
-- sudo add-apt-repository ppa:jonathonf/texlive
+- sudo add-apt-repository -y ppa:jonathonf/texlive
 - sudo apt update && sudo apt install texlive
 # - sudo apt-get update && sudo apt-get install --no-install-recommends
 #   texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra
