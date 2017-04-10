@@ -13,7 +13,24 @@
 \newcommand{\DSManual}{http://physics111.lib.berkeley.edu/Physics111/Equipment_Manuals/SRS/DS345m.pdf}
 \newcommand{\SpectralLineShape}{https://en.wikipedia.org/wiki/Spectral_line_shape}
 \newcommand{\CircuitForMagneticCoils}{http://experimentationlab.berkeley.edu/sites/default/files/OPT/Circuitformagnetic\%20coils.png}
+% Same link as OPT reprints?
 \newcommand{\PhysicsLibrarySite}{http://physics111.lib.berkeley.edu/Physics111/Reprints/OPT/OPT_index.html}
+
+% Reference links
+\newcommand{\OpticalPumpingZafra}{http://physics111.lib.berkeley.edu/Physics111/Reprints/OPT/05-Optical_Pumping-DeZafra.pdf}
+\newcommand{\RbEnergyLevels}{http://experimentationlab.berkeley.edu/sites/default/files/images/OPT_RbEnergyLevels.pdf}
+\newcommand{\OpticalPumpingBloom}{http://physics111.lib.berkeley.edu/Physics111/Reprints/OPT/02-Optical_Pumping-Bloom.pdf}
+% Experiment 7 is same as "Experiment setup" link?
+\newcommand{\ExperimentSeven}{http://physics111.lib.berkeley.edu/Physics111/Reprints/OPT/06-Experiment_7.pdf}
+\newcommand{\NuclearMoments}{http://physics111.lib.berkeley.edu/Physics111/Reprints/OPT/04-Nuclear_Moments.pdf}
+\newcommand{\Rubidium}{http://physics111.lib.berkeley.edu/Physics111/Reprints/OPT/OPT\%20Rubidium.pdf}
+\newcommand{\OPTReprints}{http://physics111.lib.berkeley.edu/Physics111/Reprints/OPT/OPT_index.html}
+\newcommand{\ErrorAnalysis}{http://physics111.lib.berkeley.edu/Physics111/Reprints/Data\%20Analysis\%20Book\%20PDF/Introduction_To_Error_Analysis_Taylor_John.pdf}
+\newcommand{\DataAnalysis}{http://physics111.lib.berkeley.edu/Physics111/Reprints/Data\%20Analysis\%20Book\%20PDF/Error\%20Analysis\%20Book-Louis\%20Lyons.pdf}
+% James Camparo broken link
+\newcommand{\OpticalPumpingCarver}{http://physics111.lib.berkeley.edu/Physics111/Reprints/OPT/03-Optical_Pumping-Carver.pdf}
+\newcommand{\HanleEffect}{http://physics111.lib.berkeley.edu/Physics111/Reprints/OPT/07-Hanle_Effect.pdf}
+\newcommand{\Diagrams}{http://physics111.lib.berkeley.edu/Physics111/Reprints/OPT/01-diagrams.pdf}
 
 \begin{document}
 
@@ -67,7 +84,41 @@ Comments: E-mail \href{\MailDonOrlando}{\textbf{Don Orlando}}
 
 \noindent\textbf{Last day of the experiment please fill out the \href{\ExperimentEvaluation}{\textbf{Experiment Evaluation}}}. \\
 
-\noindent\textbf{Suggested Reading: Read carefully References \cite{zafra,rubidium_diagrams,bloom,experiment7}} \\
+\noindent\textbf{Suggested Reading: Read carefully References \cite{Zafra,RbDiagrams,Bloom,ExperimentSeven}}
+\begin{thebibliography}{}
+\bibitem{Zafra}
+R.L. De Zafra, ``\href{\OpticalPumpingZafra}{\textbf{Optical Pumping}}'', Amer. Journ. of Phys. 28, 646 (1960). \#QC1.A4
+
+\bibitem{RbDiagrams}
+Reference Rubidium Diagrams \href{\RbEnergyLevels}{\textbf{Rb Energy Levels}}
+
+\bibitem{Bloom}
+A.L. Bloom, ``\href{\OpticalPumpingBloom}{\textbf{Optical Pumping}}'', Scientific American, October 1960, p.72. \#T1.S5
+
+\bibitem{ExperimentSeven}
+\href{\ExperimentSeven}{\textbf{Experiment 7}} report on Optical Pumping
+
+\bibitem{Ramsey}
+N.F. Ramsey, \href{\NuclearMoments}{\textbf{Nuclear Moments}}, Wiley, 1953. \#QC174.1.R31. Advanced treatment.
+
+\bibitem{Moore}
+C.E. Moore. ``\href{\Rubidium}{\textbf{Rubidium}}''. Atomic Energy Levels Vol. II, National Bureau of Standards, 1952. \#QC453.M6
+
+\bibitem{ExperimentSetup}
+Detailed description of an experiment on Electron Spin Resonance using optical pumping [\href{\ExperimentSeven}{\textbf{Experiment setup}}]. Must read if you want to work out the first problem in the prelab.
+
+\bibitem{OpticalPumpingReferences}
+\href{\OPTReprints}{\textbf{All Optical Pumping References}} on Library Site
+
+\bibitem{LabLibrarySite}
+\href{\LabReprints}{\textbf{Physics 111-Lab Library site}}
+\end{thebibliography}
+
+\vspace{1em}
+
+\noindent More \hyperref[references]{\textbf{References}}
+
+\vspace{1em}
 
 \noindent You should keep a laboratory notebook. The notebook should contain a detailed record of everything that was done and how/why it was done, as well as all of the data and analysis, also with plenty of how/why entries. This will aid you when you write your report.
 
@@ -95,7 +146,7 @@ Your goal in this lab is to find the resonance frequencies, and thereby measure 
 
 \section{Preparation Before The Lab}
 
-Starting with the articles by \citeauthor{bloom} and \citeauthor{zafra}, read through the Optical Pumping Reprints. The reprints for this lab are all theoretical, and should be understood before coming to lab. Note, however, that not all of the diagrams or discussions are correct for our experiment: some of the articles discuss only transitions between hyperfine levels, while we have Zeeman splitting as well. Try to keep clear which splittings are which, and which are important for our transitions. See, for example, \citeauthor{zafra} (p.647). (You will also find that there is some variation in notation between the various reprint articles; parsing these differences can be challenging, but it is an important skill to have. Let the consistency of the underlying physics guide you.)
+Starting with the articles by Bloom \cite{Bloom} and Zafra \cite{Zafra}, read through the Optical Pumping Reprints. The reprints for this lab are all theoretical, and should be understood before coming to lab. Note, however, that not all of the diagrams or discussions are correct for our experiment: some of the articles discuss only transitions between hyperfine levels, while we have Zeeman splitting as well. Try to keep clear which splittings are which, and which are important for our transitions. See, for example, Zafra \cite{Zafra} (p.647). (You will also find that there is some variation in notation between the various reprint articles; parsing these differences can be challenging, but it is an important skill to have. Let the consistency of the underlying physics guide you.)
 
 \subsection{Definitions}
 
@@ -266,7 +317,7 @@ After swapping the modulation output from the function generator with the modula
 \begin{itemize}
     \item Temperature variation of the signal and intensity dependence
 
-    \item Signal variation with different voltages (ranging from 0V - 9V) applied across the Helmholtz coils (Including reverse polarity). How does the resonance change with voltage/current supplied to the Helmholtz coils
+    \item Signal variation with different voltages (ranging from 0V -- 9V) applied across the Helmholtz coils (Including reverse polarity). How does the resonance change with voltage/current supplied to the Helmholtz coils
 
     \item Refining the resonance frequency measurements:
     \begin{itemize}
@@ -366,8 +417,29 @@ Nov. 19, 2007. The Physics-111 Optical Pumping experiment utilizes radio-frequen
 
 \noindent\textbf{Last day of the experiment please fill out the \href{\ExperimentEvaluation}{\textbf{Experiment Evaluation}}}.
 
-\nocite{*}
-\bibliography{references}
+\begin{thebibliography}{}
+\label{references}
+\bibitem{Taylor}
+J.R. Taylor, Taylor Book 2ed ``\href{\ErrorAnalysis}{\textbf{An Introduction to Error Analysis}}'', Oxford,
+
+\bibitem{Lyons}
+L. Lyons, ``\href{\DataAnalysis}{\textbf{A Practical Guide to Data Analysis for Physical Science Students}}'', Cambridge, 1991. \#QC33.L9
+
+\bibitem{Camparo}
+James Camparo, ``The Rubidium Atomic Clock and Basic Research'', Physics Today -- November 2007
+
+\bibitem{Carver}
+Carver, Thomas R. ``\href{\OpticalPumpingCarver}{\textbf{Optical Pumping}}''; Science: vol. 141, Aug 16, 1963, pp. 599-608.
+
+\bibitem{Corney}
+Corney, Alan, ``\href{\HanleEffect}{\textbf{The Hanle Effect and The Theory of Resonance Fluorescence Experiments}}''; Atomic and Laser Spectroscopy, (1977). Pp. 473-533.
+
+\bibitem{ElectronicsDiagrams}
+Diagrams of the electronics [\href{\Diagrams}{\textbf{Diagrams}}]
+
+\bibitem{Reprints}
+Check out all the \href{\OPTReprints}{\textbf{Reprints}} for this experiment;
+\end{thebibliography}
 
 \vspace{1em}
 \noindent Other reprints and reference materials can be found on the \href{\PhysicsLibrarySite}{\textbf{Physics 111 Library Site}}.

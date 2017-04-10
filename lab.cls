@@ -15,7 +15,6 @@
     linkcolor=magenta,
 }
 \RequirePackage[numbers]{natbib}
-\bibliographystyle{plainnat}
 
 \date{}
 \author{}
@@ -38,3 +37,4 @@
 \newcommand{\ErrorAnalysisVideo}{https://www.youtube.com/watch?v=jR54387Wd6c}
 \newcommand{\ErrorAnalysisNotes}{http://experimentationlab.berkeley.edu/EAX}
 \newcommand{\ExperimentEvaluation}{http://experimentationlab.berkeley.edu/StudentEvaluation}
+\newcommand{\LabReprints}{http://physics111.lib.berkeley.edu/Physics111/}
