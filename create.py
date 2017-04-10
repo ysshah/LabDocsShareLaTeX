@@ -14,7 +14,7 @@ changed_files = subprocess.check_output(
 
 if 'lab.cls' in changed_files:
     # If lab.cls is changed, rebuild all PDFs
-    labs_to_rebuild = LABS
+    labs_to_rebuild = [lab for lab in LABS if os.path.exists(lab)]
 else:
     # Otherwise, only rebuild PDFs that have changed files
     labs_to_rebuild = set()
@@ -41,3 +41,6 @@ if len(labs_to_rebuild) > 0:
             "{}/build/{}.pdf --temp-dir=~/tmp/ "
             "live.{}@appserver.live.{}.drush.in:files/writeups/")
         subprocess.call(sync_cmd.format(base_dir, lab, SITE, SITE), shell=True)
+
+else:
+    print 'No labs to rebuild.'
